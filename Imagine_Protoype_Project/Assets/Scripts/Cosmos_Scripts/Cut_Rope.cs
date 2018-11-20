@@ -35,12 +35,19 @@ public class Cut_Rope : MonoBehaviour {
                     if (hit.transform.parent.name == "Anchor Left" && cutLeft == false){
                         cutLeft = true;
                         numberRopesCut++;
+                        
+                        GetComponent<AudioManager>().Play("Cut");
+                        
                     }
 
                     if (hit.transform.parent.name == "Anchor Right" && cutRight == false)
                     {
                         cutRight = true;
+                    
                         numberRopesCut++;
+
+                        GetComponent<AudioManager>().Play("Cut");
+                    
                     }
 
                     Destroy(hit.collider.gameObject);
