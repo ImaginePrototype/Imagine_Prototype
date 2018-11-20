@@ -28778,11 +28778,6 @@ Prefab:
       propertyPath: m_RootOrder
       value: 2
       objectReference: {fileID: 0}
-    - target: {fileID: 114324161269880634, guid: 0c1c8341248f73142a5587bf79bd5b39,
-        type: 2}
-      propertyPath: Player
-      value: 
-      objectReference: {fileID: 1429681281}
     - target: {fileID: 114880394949223010, guid: 0c1c8341248f73142a5587bf79bd5b39,
         type: 2}
       propertyPath: BalloonPoint
@@ -28793,6 +28788,11 @@ Prefab:
       propertyPath: Prism
       value: 
       objectReference: {fileID: 1738462406}
+    - target: {fileID: 114324161269880634, guid: 0c1c8341248f73142a5587bf79bd5b39,
+        type: 2}
+      propertyPath: Player
+      value: 
+      objectReference: {fileID: 1429681281}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0c1c8341248f73142a5587bf79bd5b39, type: 2}
   m_IsPrefabAsset: 0
