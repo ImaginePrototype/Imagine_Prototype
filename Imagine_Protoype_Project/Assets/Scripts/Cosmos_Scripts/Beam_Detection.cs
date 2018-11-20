@@ -17,11 +17,16 @@ public class Beam_Detection : MonoBehaviour {
 
 	GameObject player;
 
+	private bool played;
+
 	void Start () {
 		circle = transform.GetChild(0).gameObject;
 		playerArrived = false;
 		player = GameObject.FindGameObjectWithTag("Player");
 		rend = GetComponent<LineRenderer>();
+
+
+		//GetComponent<AudioManager>().Play("Beam_On");
 	}
 	
 	void Update () {
@@ -42,6 +47,13 @@ public class Beam_Detection : MonoBehaviour {
 
 			upperPoint = new Vector3(transform.position.x, transform.position.y + yPos, 0);
 		}else{
+
+			if (!played) {
+
+				GetComponent<AudioManager>().Play("Beam_On");
+				played = true;
+			}
+
 			upperPoint = Vector3.Lerp(upperPoint, player.transform.position, Time.deltaTime * 4f);
 		}
 

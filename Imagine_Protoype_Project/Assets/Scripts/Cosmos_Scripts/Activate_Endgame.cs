@@ -34,6 +34,10 @@ public class Activate_Endgame : MonoBehaviour
         }
 		
 		player = GameObject.FindGameObjectWithTag("Player");
+        
+       // GetComponent<AudioManager>().Play("Beam_On");
+        
+        
     }
 
     // Update is called once per frame

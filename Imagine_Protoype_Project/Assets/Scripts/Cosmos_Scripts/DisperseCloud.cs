@@ -49,6 +49,9 @@ public class DisperseCloud : MonoBehaviour {
         part.Play();
         finished = false;
         
+        GetComponent<AudioManager>().Play("Puff");
+        
+        
     }
 
     void FadeSprite() {

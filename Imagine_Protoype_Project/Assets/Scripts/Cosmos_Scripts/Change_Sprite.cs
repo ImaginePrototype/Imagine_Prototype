@@ -14,6 +14,8 @@ public class Change_Sprite : MonoBehaviour {
 		PolygonCollider2D col = gameObject.AddComponent<PolygonCollider2D>();
 		col.isTrigger = true;
 
-		Instantiate(prefab[ran], transform.position, transform.rotation);
+		
+		//Disabled due to repeated error
+//		Instantiate(prefab[ran], transform.position, transform.rotation);
 	}
 }

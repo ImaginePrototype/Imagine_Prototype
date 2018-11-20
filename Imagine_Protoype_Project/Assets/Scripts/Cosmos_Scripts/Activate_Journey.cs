@@ -23,6 +23,8 @@ public class Activate_Journey : MonoBehaviour {
         StartCoroutine("StopAnimation");
         transform.GetChild(0).GetComponent<DrawRay>().drawLine = true;
         GetComponent<AudioManager>().Play("Activate_Journey");
+        Debug.Log("Begining Journey");
+        
         
         
     }

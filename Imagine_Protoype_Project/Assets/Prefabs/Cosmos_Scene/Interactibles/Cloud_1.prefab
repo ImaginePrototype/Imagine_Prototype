@@ -24,6 +24,7 @@ GameObject:
   - component: {fileID: 199075046445495334}
   - component: {fileID: 114715371675766900}
   - component: {fileID: 60855090787729304}
+  - component: {fileID: 114256324790893854}
   m_Layer: 0
   m_Name: Cloud_1
   m_TagString: Untagged
@@ -103,6 +104,36 @@ PolygonCollider2D:
       - {x: 0.14, y: -0.46857142}
       - {x: 0.24285714, y: -0.45142856}
       - {x: 0.34, y: -0.4}
+--- !u!114 &114256324790893854
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1248337956101560}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6668fa9c07509b641b9ed197e8d325e8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sounds:
+  - name: Puff
+    audioMixerGroup: {fileID: 243862759904171356, guid: f53abdbdf703fff48a03ac380608cf1c,
+      type: 2}
+    clips:
+    - {fileID: 8300000, guid: ed0f6550bb1a5be49a646676062fefca, type: 3}
+    - {fileID: 8300000, guid: 157310da433dbf648aff5ab9aa3660ee, type: 3}
+    - {fileID: 8300000, guid: 1408d8c5a2a91364da6dbaf93348611d, type: 3}
+    volume: 1
+    pitch: 1
+    spatialBlend: 0
+    loop: 0
+    mute: 0
+    playOnAwake: 0
+    source: {fileID: 0}
+    FadingIn: 0
+    FadingOut: 0
+  master: 0
+  DontDestroyOnLoad: 0
 --- !u!114 &114715371675766900
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -116,7 +147,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   minimum: 0
   maximum: 1
-  duration: 1.1
+  duration: 0.85
   sprite: {fileID: 212375283883103324}
 --- !u!198 &198249845983852054
 ParticleSystem:
@@ -125,7 +156,7 @@ ParticleSystem:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1248337956101560}
   serializedVersion: 5
-  lengthInSec: 1.5
+  lengthInSec: 1.2
   simulationSpeed: 1.5
   stopAction: 0
   looping: 0
